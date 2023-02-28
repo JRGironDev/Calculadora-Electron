@@ -1,0 +1,109 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: 125px repeat(4, 50px);
+  background-color: #3f0071;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.pantalla {
+  grid-column: 1 / -1;
+  padding: 15px;
+  margin: 5px 5px 15px 5px;
+  border-radius: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #2e2c2c;
+}
+
+#actual {
+  font-size: 1.5rem;
+  max-width: 175px;
+  overflow-wrap: break-word;
+}
+
+#resultado {
+  font-size: 1.75rem;
+  max-width: 175px;
+  overflow-wrap: break-word;
+}
+
+button {
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  border: none;
+  background-color: #fb2576;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.9),
+    -5px -5px 15px 5px rgba(251, 37, 118, 0.2);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.botonOp,
+.botonBorrar,
+.botonLimpiar {
+  background-color: #332fd0;
+}
+
+.botonOp:active,
+.botonBorrar:active,
+.botonLimpiar:active {
+  background-color: #201f8b;
+}
+
+.botonCalc:active {
+  background-color: #bc1c5a;
+}
+
+.historial {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+  overflow-y: auto;
+}
+
+.historial h2 {
+  justify-content: center;
+  background-color: #3f0071;
+  padding: 5px 15px;
+}
+
+#lista {
+  padding: 0;
+}
+
+li {
+  color: #000;
+  text-align: center;
+  list-style: none;
+  padding: 5px;
+}

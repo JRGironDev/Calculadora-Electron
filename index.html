@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div id="calculadora">
+        <div class="pantalla">
+          <div id="resultado">0</div>
+          <div id="actual"></div>
+        </div>
+        <!-- Pantalla -->
+        <button class="botonCalc" id="botonUno">1</button>
+        <button class="botonCalc" id="botonDos">2</button>
+        <button class="botonCalc" id="botonTres">3</button>
+        <button class="botonOp" id="botonSuma">+</button>
+        <button class="botonCalc" id="botonCuatro">4</button>
+        <button class="botonCalc" id="botonCinco">5</button>
+        <button class="botonCalc" id="botonSeis">6</button>
+        <button class="botonOp" id="botonResta">-</button>
+        <button class="botonCalc" id="botonSiete">7</button>
+        <button class="botonCalc" id="botonOcho">8</button>
+        <button class="botonCalc" id="botonNueve">9</button>
+        <button class="botonOp" id="botonDivi">/</button>
+        <button class="botonLimpiar" id="botonLimpiar">C</button>
+        <button class="botonCalc" id="botonCero">0</button>
+        <button class="botonBorrar" id="botonBorrar">←</button>
+        <button class="botonOp" id="botonMulti">x</button>
+      </div>
+      <!-- Calculadora-->
+
+      <div class="historial">
+        <h2>Historial</h2>
+        <ul id="lista"></ul>
+      </div>
+      <!-- Historial-->
+    </div>
+    <!-- Contenedor-->
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
